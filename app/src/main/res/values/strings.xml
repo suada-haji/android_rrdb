@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Android RRDB</string>
+    <string name="book_title">MOST BLESSED OF THE PATRIARCHS</string>
+    <string name="book_author">By Diana Gabaldon</string>
 </resources>
