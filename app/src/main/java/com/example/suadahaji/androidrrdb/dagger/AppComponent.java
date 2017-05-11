@@ -1,5 +1,7 @@
 package com.example.suadahaji.androidrrdb.dagger;
 
+import com.example.suadahaji.androidrrdb.api.ApiModule;
+
 import dagger.Component;
 
 /**
@@ -7,7 +9,7 @@ import dagger.Component;
  * Bridges the modules and the base application class
  */
 
-@Component(modules = {AppModule.class})
+@Component(modules = {AppModule.class, ApiModule.class})
 public interface AppComponent {
 
     void inject(BaseApplication baseApplication);

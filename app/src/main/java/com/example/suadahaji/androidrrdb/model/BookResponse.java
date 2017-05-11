@@ -17,7 +17,7 @@ public class BookResponse {
         this.books = books;
     }
 
-    public void setBooks(ArrayList<Book> books) {
-        this.books = books;
+    public ArrayList<Book> getBooks() {
+        return books;
     }
 }
