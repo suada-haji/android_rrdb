@@ -46,7 +46,12 @@ dependencies {
     // Retrofit -- interface for making REST API calls
     compile 'com.squareup.retrofit2:retrofit:2.0.2'
     compile 'com.squareup.retrofit2:converter-gson:2.0.2'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0"
+    compile("com.squareup.retrofit2:converter-simplexml:2.0.0") {
+        exclude module: 'stax'
+        exclude module: 'stax-api'
+        exclude module: 'xpp3'
+    }
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
 
 }
